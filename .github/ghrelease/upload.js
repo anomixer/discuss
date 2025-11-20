@@ -2,7 +2,7 @@ const { Octokit } = require("@octokit/rest");
 const fs = require("fs");
 const path = require("path");
 
-const GH_TOKEN = process.env.GH_PAT; // 你的高权限 PAT
+const GH_TOKEN = process.env.GH_PAT; // 你的高許可權 PAT
 const OWNER = "minlearn";
 const REPO = "discuss";
 const TAG = "inital";
@@ -63,13 +63,13 @@ async function uploadAssetsToRelease(release, localDir) {
     const stats = fs.statSync(filePath);
     if (!stats.isFile()) continue;
 
-    // 检查是否存在同名 asset
+    // 檢查是否存在同名 asset
     const existing = existingAssets.find(a => a.name === file);
     if (existing) {
       await deleteAsset(existing.id, file);
     }
 
-    // 上传
+    // 上傳
     const data = fs.readFileSync(filePath);
     await octokit.repos.uploadReleaseAsset({
       url: release.upload_url,
