@@ -154,7 +154,7 @@ flex-direction: column;
 }
 
 /* Language switcher specific styles */
-/* 語言切換器專用樣式 */npx browserify ChatCrypt.cjs -o ChatCrypt.js
+/* 语言切换器专用样式 */npx browserify ChatCrypt.cjs -o ChatCrypt.js
 .language-current {
 	font-weight: 500;
 	color: #30a8f7;
@@ -167,7 +167,7 @@ flex-direction: column;
 }
 
 /* Language selector styles */
-/* 語言選擇器樣式 */
+/* 语言选择器样式 */
 .language-selector {
 	position: relative;
 }
@@ -212,7 +212,7 @@ flex-direction: column;
 }
 
 /* Theme selector styles */
-/* 主題選擇器樣式 */
+/* 主题选择器样式 */
 .theme-selector {
 	display: flex;
 	gap: 12px;
@@ -619,7 +619,7 @@ flex-direction: column;
 }
 
 /* Special positioning for file message bubbles */
-/* 檔案訊息氣泡的特殊定位 */
+/* 文件消息气泡的特殊定位 */
 .bubble:has(.file-message) .bubble-meta {
 	position: static;
 	margin-left: 0;
@@ -628,7 +628,7 @@ flex-direction: column;
 }
 
 /* Remove right padding for file message bubbles since timestamp is not absolute */
-/* 移除檔案訊息氣泡的右邊距，因為時間戳不是絕對定位 */
+/* 移除文件消息气泡的右边距，因为时间戳不是绝对定位 */
 .bubble.me:has(.file-message) {
 	padding: 10px 10px 7px 10px;
 }
@@ -638,7 +638,7 @@ flex-direction: column;
 }
 
 /* Fallback for browsers that don't support :has() */
-/* 為不支援 :has() 的瀏覽器提供後備方案 */
+/* 为不支持 :has() 的浏览器提供后备方案 */
 .bubble.file-bubble .bubble-meta {
 	position: static;
 	margin-left: 0;
@@ -647,7 +647,7 @@ flex-direction: column;
 }
 
 /* Fallback: Remove right padding for file message bubbles */
-/* 後備方案：移除檔案訊息氣泡的右邊距 */
+/* 后备方案：移除文件消息气泡的右边距 */
 .bubble.me.file-bubble {
 	padding: 10px 10px 7px 10px;
 }
@@ -1108,7 +1108,7 @@ flex-direction: column;
 }
 
 /* File message styles */
-/* 檔案訊息樣式 */
+/* 文件消息样式 */
 
 .file-message {
 	overflow: hidden;
@@ -1323,7 +1323,7 @@ flex-direction: column;
 }
 
 /* File Upload Modal Styles */
-/* 檔案上傳模態框樣式 */
+/* 文件上传模态框样式 */
 .file-upload-modal {
 	position: fixed;
 	top: 0;
@@ -1637,7 +1637,7 @@ flex-direction: column;
 }
 
 /* Responsive Design for File Messages */
-/* 檔案訊息響應式設計 */
+/* 文件消息响应式设计 */
 @media (max-width: 768px) {
 	.file-message {
 		max-width: 280px;
@@ -1718,39 +1718,39 @@ flex-direction: column;
 }
 
 /* Image preview in input */
-/* 輸入框圖片預覽樣式 */
+/* 输入框图片预览样式 */
 .input-image-preview {
 	position: relative;
-	display: inline-block; /* 改為 inline-block 以便並排顯示 */
-	margin: 4px; /* 統一 margin */
+	display: inline-block; /* 改为 inline-block 以便并排显示 */
+	margin: 4px; /* 统一 margin */
 	border-radius: 8px;
-	overflow: visible; /* 允許移除按鈕稍微超出 */
+	overflow: visible; /* 允许移除按钮稍微超出 */
 	background: #f8f9fa;
-	border: 1px solid #e9ecef; /* 邊框調整 */
+	border: 1px solid #e9ecef; /* 边框调整 */
 	transition: all 0.2s ease;
-	max-width: 80px; /* 限制預覽容器的最大寬度 */
+	max-width: 80px; /* 限制预览容器的最大宽度 */
 }
 
 .input-image-preview:hover {
 	border-color: #007bff;
 	transform: translateY(-1px);
-	box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1); /* 調整陰影 */
+	box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1); /* 调整阴影 */
 }
 
 .input-image-preview-img {
 	display: block;
-	width: 100%; /* 圖片寬度充滿容器 */
+	width: 100%; /* 图片宽度充满容器 */
 	height: 60px; /* 固定高度 */
 	object-fit: cover;
-	border-radius: 6px; /* 輕微圓角 */
+	border-radius: 6px; /* 轻微圆角 */
 }
 
 .input-image-remove-btn {
 	position: absolute;
-	top: -10px; /* 調整位置使其更易點選 */
-	right: -10px; /* 調整位置使其更易點選 */
-	width: 22px; /* 增大點選區域 */
-	height: 22px; /* 增大點選區域 */
+	top: -10px; /* 调整位置使其更易点击 */
+	right: -10px; /* 调整位置使其更易点击 */
+	width: 22px; /* 增大点击区域 */
+	height: 22px; /* 增大点击区域 */
 	border: none;
 	border-radius: 50%;
 	background: #dc3545;
@@ -1776,7 +1776,7 @@ flex-direction: column;
 }
 
 /* Image message in chat bubble */
-/* 聊天氣泡中的圖片訊息樣式 */
+/* 聊天气泡中的图片消息样式 */
 .bubble-img {
 	max-width: 300px;
 	width: 100%;
@@ -1804,7 +1804,7 @@ flex-direction: column;
 }
 
 /* Mixed content (text + image) */
-/* 混合內容（文字 + 圖片）樣式 */
+/* 混合内容（文字 + 图片）样式 */
 .bubble-content.mixed-content {
 	display: flex;
 	flex-direction: column;

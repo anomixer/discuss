@@ -1,5 +1,5 @@
 /* 
-// 通用樣式
+// 通用样式
 function getCommonStyles() {
     return `
 */
@@ -149,7 +149,7 @@ function getCommonStyles() {
       `;
 }
 
-// 檔案列表樣式
+// 文件列表样式
 function getFileListStyles() {
     return `
 */
@@ -342,12 +342,12 @@ function getFileListStyles() {
       `;
 }
 
-// 管理頁面樣式
+// 管理页面样式
 function getAdminStyles() {
     return `
 */
 
-          /* 原有的基礎樣式 */
+          /* 原有的基础样式 */
           .title {
               margin-bottom: 2rem;
               color: var(--text-primary);
@@ -421,7 +421,7 @@ function getAdminStyles() {
               transform: translateY(0);
           }
 
-          /* 移動端適配 */
+          /* 移动端适配 */
           @media (max-width: 768px) {
               .search-box {
                   gap: 1rem;
@@ -705,7 +705,7 @@ function getAdminStyles() {
               transform: rotate(180deg);
           }
           
-          /* 新增危險按鈕樣式 */
+          /* 添加危险按钮样式 */
           .btn-danger {
               background: #dc2626 !important;
           }
@@ -778,7 +778,7 @@ function getAdminStyles() {
               color: var(--text-primary);
           }
 
-          /* 源資訊相關樣式 */
+          /* 源信息相关样式 */
           .source-info {
               display: flex;
               align-items: center;
@@ -808,7 +808,7 @@ function getAdminStyles() {
               object-fit: contain;
           }
 
-          /* GitHub 資訊展示樣式 */
+          /* GitHub 信息展示样式 */
           .gh-info {
               display: flex;
               flex-direction: column;
@@ -856,7 +856,7 @@ function getAdminStyles() {
           }
 
 
-          /* 移動端適配 */
+          /* 移动端适配 */
           @media (max-width: 768px) {
               .container {
                   padding: 1rem;
