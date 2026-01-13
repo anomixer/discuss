@@ -1,7 +1,9 @@
 name: deploydiscuss
 
 on:
-  #push:
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 env:
